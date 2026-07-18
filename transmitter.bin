@@ -1,0 +1,84 @@
+#include <Wire.h>
+#include <MPU6050.h>
+#include <SoftwareSerial.h>
+
+
+MPU6050 mpu;
+
+
+SoftwareSerial bluetooth(10,11);
+// RX, TX
+
+
+int16_t ax,ay,az;
+
+
+
+void setup()
+{
+
+Serial.begin(9600);
+
+bluetooth.begin(9600);
+
+
+Wire.begin();
+
+mpu.initialize();
+
+
+Serial.println("Master Ready");
+
+}
+
+
+
+void loop()
+{
+
+mpu.getAcceleration(&ax,&ay,&az);
+
+
+char command='S';
+
+
+
+if(ay > 9000)
+{
+ command='F';
+}
+
+else if(ay < -9000)
+{
+ command='B';
+}
+
+
+else if(ax > 9000)
+{
+ command='R';
+}
+
+
+else if(ax < -9000)
+{
+ command='L';
+}
+
+
+else
+{
+ command='S';
+}
+
+
+
+bluetooth.write(command);
+
+
+Serial.println(command);
+
+
+delay(100);
+
+}
