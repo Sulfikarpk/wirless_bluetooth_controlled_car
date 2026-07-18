@@ -13,6 +13,12 @@ The **Transmitter Unit** uses an **Arduino Uno**, an **MPU6050 Gyroscope/Acceler
 The **Receiver Unit** consists of another **Arduino Uno**, an **HC-05 Bluetooth module** configured as the **Slave**, an **L298N Motor Driver**, and DC motors. The receiver Arduino interprets the incoming Bluetooth commands and controls the motors, allowing the car to move in real time according to the user's hand gestures.
 
 ---
+# 🎥 Demonstration
+
+part-1 testing 
+https://youtube.com/shorts/T_PyylMDDD8
+
+---
 
 # 🎯 Objective
 
@@ -90,13 +96,6 @@ The **Receiver Unit** consists of another **Arduino Uno**, an **HC-05 Bluetooth 
 ---
 
 -transmitter part(https://github.com/Sulfikarpk/wirless_bluetooth_controlled_car/blob/main/transmitter.bin)
-
----
-
-# 🎥 Demonstration
-
-part-1 testing 
-https://youtube.com/shorts/T_PyylMDDD8
 
 ---
 
