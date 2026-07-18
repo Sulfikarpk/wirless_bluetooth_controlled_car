@@ -91,7 +91,8 @@ The **Receiver Unit** consists of another **Arduino Uno**, an **HC-05 Bluetooth 
 
 # 🎥 Demonstration
 
-*(Add project video or YouTube link here)*
+part-1 testing 
+https://github.com/Sulfikarpk/wirless_bluetooth_controlled_car/blob/main/ble_car_Geuster_testing_1.mp4
 
 ---
 
