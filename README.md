@@ -85,7 +85,7 @@ The **Receiver Unit** consists of another **Arduino Uno**, an **HC-05 Bluetooth 
 
 # 📁 source code
 
--reciver part(link1)
+-reciver part(https://github.com/Sulfikarpk/wirless_bluetooth_controlled_car/blob/main/reciver.bin)
 
 ---
 
